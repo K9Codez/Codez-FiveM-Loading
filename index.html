@@ -1,0 +1,132 @@
+<html>
+    <head>
+    <title>Codez Development Loading Screen <333</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <script type="text/javascript" src="js/text.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+  
+  
+  
+  
+  
+  
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+               <header id="header">
+                    <h1>Change Name Of This In 'index.html'</h1>
+                    <p>Codez &nbsp;&bull;&nbsp; Development &nbsp;&bull;&nbsp;❤</p>
+                    <nav>
+                        <ul>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+		</div>
+        <video autoplay muted loop id="video">
+            <source src="video/v1ideo.mp4" type="video/mp4">
+          </video>
+        <img src="img/cursor.png" alt="cursor" id="cursor">
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+                <img src="img/music.png" width="30px" height="30px">
+                <span></span>
+            </label>
+
+        <ul class="menu__box">
+
+            <div id="app-cover">
+                <div id="player">
+                    <div id="player-track">
+                        <div id="album-name"></div>
+                        <div id="track-name"></div>
+                        <div id="track-time">
+                            <div id="current-time"></div>
+                            <div id="track-length"></div>
+                        </div>
+                        <div id="s-area">
+                            <div id="ins-time"></div>
+                            <div id="s-hover"></div>
+                            <div id="seek-bar"></div>
+                        </div>
+                    </div>
+                    <div id="player-content">
+                        <div id="album-art">
+                            <img src="https://cdn.discordapp.com/attachments/978322561668624434/984831471774748703/ar1med_rp_logo.gif" class="active" id="_1">
+                            <img src="https://cdn.discordapp.com/attachments/978322561668624434/984831471774748703/arm1ed_rp_logo.gif" id="_2">
+                            <img src="https://cdn.discordapp.com/attachments/978322561668624434/984831471774748703/arm1ed_rp_logo.gif" id="_3">
+                            <img src="https://cdn.discordapp.com/attachments/978322561668624434/984831471774748703/arm1ed_rp_logo.gif" id="_4">
+                            <img src="https://cdn.discordapp.com/attachments/978322561668624434/984831471774748703/arm1ed_rp_logo.gif" id="_5">
+                            <div id="buffer-box">Change This Line 68-73</div>
+                        </div>
+                        <div id="player-controls">
+                            <div class="control">
+                                <div class="button" id="play-previous">
+                                    <i class="fas fa-backward"></i>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <div class="button" id="play-pause-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <div class="button" id="play-next">
+                                    <i class="fas fa-forward"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+    <footer id="footer">
+        <span class="copyright">&copy; Loading screen by: <a href="https://github.com/CodezDevs" target="_blank" onclick="window.invokeNative('openUrl', 'https://github.com/CodezDevs');">Codez</a>.</span>
+    </footer>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        function ffalse() {
+            return false;
+        }
+
+        function ftrue() {
+            return true;
+        }
+
+        document.onselectstart = new Function("return false");
+        if (window.sidebar) {
+            document.onmousedown = ffalse;
+            document.onclick = ftrue;
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e) {
+            $("#cursor").css({
+                left: e.pageX,
+                top: e.pageY
+            });
+        })
+    </script>
+</body>
+
+</html>
