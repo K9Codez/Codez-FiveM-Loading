@@ -3,6 +3,7 @@ game 'gta5'
 
 author "CodezDevelopment"
 description "Made My Codez"
+developer "Codez"
 version "2.0"
 
 files {
