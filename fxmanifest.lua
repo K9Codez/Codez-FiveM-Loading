@@ -1,7 +1,7 @@
 fx_version 'adamant'
 game 'gta5'
 
-author "ManLikeCodezDeveloper"
+author "CodezDevelopment"
 description "Made My Codez"
 version "2.0"
 
