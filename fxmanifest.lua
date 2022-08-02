@@ -3,7 +3,7 @@ game 'gta5'
 
 author "CodezDevelopment"
 description "Made My Codez"
-developer "Codez"
+developer "Codeez"
 
 version "2.0"
 
